@@ -17,14 +17,20 @@ Note: To find the specific version of Conda compatible with your system, visit t
 ### 1. Install Conda and Update Environment
 Download the installer, run the installation script, and refresh your shell environment variables:    
 
-#### Download the Anaconda installer    
-$ wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh     
+- #### Download the Anaconda installer    
+```   
+wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh     
+```
 
-#### Execute the installation script    
-$ bash Anaconda3-2025.06-0-Linux-x86_64.sh    
+- #### Execute the installation script    
+```   
+bash Anaconda3-2025.06-0-Linux-x86_64.sh    
+```
 
-#### Reload environmental variables    
-$ source ~/.bashrc
+- #### Reload environmental variables    
+```   
+source ~/.bashrc
+```
 
 ### 2. Tool Installation Options
 #### Option A: GATK4 Workflow    
