@@ -1,4 +1,4 @@
-## Data download
+## Brown bear data download
 1. Create the required directories  
     a. If you are working with brown bear data, create a directory named "bear" in your home directory.    
  	```   
