@@ -1,7 +1,7 @@
 ##  Variant calling with analysis
-1.	Download "gatk3.py" module from the github repository into directory "tools".   
+1.	Download "pipeline3.py" module from the github repository into directory "tools".   
     ```
-    curl -L -O https://raw.githubusercontent.com/infoLab204/pseudoDB/refs/heads/main/pipeline/gatk3.py    
+    curl -L -O https://raw.githubusercontent.com/infoLab204/pseudoDB/refs/heads/main/pipeline/pipeline3.py    
     ```
 
 2.	Go to the directory "tools" and import the module as follows.   
