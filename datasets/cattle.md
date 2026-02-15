@@ -1,4 +1,4 @@
-## Data download
+## Cattle data download
 1. Create the required directories  
     a. If you are working with cattle data, create a directory named "cattle" in your home directory.    
  	```   
