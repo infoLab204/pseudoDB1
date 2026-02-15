@@ -114,34 +114,43 @@ Note: Certain species may lack established dbSNP resources.
 
 #### Option A: GATK4 Workflow Execution
 This option configures a modern environment utilizing the GATK4 HaplotypeCaller engine. The general command structure for the variant calling function is as follows:    
-Command Syntax: python3 pipeline4.py species, ref, sample, db_type, thread      
+Command Syntax: python3 pipeline4.py species ref sample db_type thread      <br>
+<br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
-##### Case 1: Generating a New Pseudo-Database
-```  
-python3 pipeline4.py human, GRCh38_full.fa, HG00096_1.fastq.gz, null, 16    
-```  
-##### Case 2: Variant Calling with an Existing dbSNP
-```  
-python3 pipeline4.py human, GRCh38_full.fa, HG00096_1.fastq.gz, human_dbSNP.vcf.gz, 16    
-```  
-##### Case 3: Variant Calling with a Custom Pseudo-Database 
-```  
-python3 pipeline4.py human, GRCh38_full.fa, HG00096_1.fastq.gz, human_pseudoDB.vcf.gz, 16    
-```
+- ##### Case 1: Generating a New Pseudo-Database
+    ```  
+    python3 pipeline4.py human GRCh38_full.fa HG00096_1.fastq.gz null 16    
+    ```
+    Upon completion, output VCF file will be located in the db/ directory.    
 
-Upon completion, all output VCF files will be located in the variants/ directory.
+- ##### Case 2: Variant Calling with an Existing dbSNP
+    ```  
+    python3 pipeline4.py human GRCh38_full.fa HG00096_1.fastq.gz human_dbSNP.vcf.gz 16    
+    ```  
+- ##### Case 3: Variant Calling with a Custom Pseudo-Database 
+    ```  
+    python3 pipeline4.py human GRCh38_full.fa HG00096_1.fastq.gz human_pseudoDB.vcf.gz 16    
+    ```
+    Upon completion, all output VCF files will be located in the variants/ directory.
 
 #### Option B: GATK3 Workflow
 This option configures a modern environment utilizing the GATK3 UnifiedGenotyper engine. The general command structure for the variant calling function is as follows:
-Command Syntax: pipeline3(species, ref, sample, db_type, thread)
+Command Syntax: python3 pipeline3.py species ref sample db_type thread    <br><br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:
-##### Case 1: Generating a New Pseudo-Database
-$ pipeline3(human, GRCh38_full.fa, HG00096_1.fastq.gz, null, 16)    
-##### Case 2: Variant Calling with an Existing dbSNP
-$ pipeline3(human, GRCh38_full.fa, HG00096_1.fastq.gz, human_dbSNP.vcf.gz, 16)    
-##### Case 3: Variant Calling with a Custom Pseudo-Database 
-$ pipeline3(human, GRCh38_full.fa, HG00096_1.fastq.gz, human_pseudoDB.vcf.gz, 16)    
-Upon completion, all output VCF files will be located in the variants/ directory.
+- ##### Case 1: Generating a New Pseudo-Database
+    ```  
+    python3 pipeline3.py human GRCh38_full.fa HG00096_1.fastq.gz null 16
+    ```
+    Upon completion, output VCF file will be located in the db/ directory.   
+- ##### Case 2: Variant Calling with an Existing dbSNP
+    ```  
+    python3 pipeline3.py human GRCh38_full.fa HG00096_1.fastq.gz human_dbSNP.vcf.gz 16    
+    ```  
+- ##### Case 3: Variant Calling with a Custom Pseudo-Database 
+    ```  
+    python3 pipeline3.py human GRCh38_full.fa HG00096_1.fastq.gz human_pseudoDB.vcf.gz 16    
+    ```  
+    Upon completion, all output VCF files will be located in the variants/ directory.
 
 
 
