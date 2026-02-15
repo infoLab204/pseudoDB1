@@ -1,5 +1,5 @@
 # Installation and Workflow Guide
-This tutorial is organized into two sections: tool installation and the genetic variant calling workflow. The first section guides you through using Conda to install essential software, such as BWA, Samtools, Picard, and GATK. The second section provides how to prepare the list of parameters for the workflow script. Please be aware that the installation procedure and workflow may vary depending on the specific GATK version used. The resulting directory structure is highlighted in Figure 1, and the workflow is demonstrated using a single-sample example in a Unix/Linux environment.
+This tutorial is organized into two sections: tool installation and the genetic variant calling workflow. The first section guides you through using Conda to install essential software, such as BWA, Samtools, Picard, and GATK. The second section provides how to prepare the list of parameters for the workflow script. Please be aware that the installation procedure and workflow may vary depending on the specific GATK version used. The resulting directory structure is highlighted in Fig 1, and the workflow is demonstrated using a single-sample example in a Unix/Linux environment.
 In the following examples:
 -	Lines starting with # are comments providing context.
 -	Commands inside code blocks are executable.
