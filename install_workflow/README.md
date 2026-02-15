@@ -72,7 +72,7 @@ conda activate gatk3         # Activate the environment
 conda install bioconda::bwa-mem2    
 ```
 ```   
-conda install bioconda::samtools    
+conda install bioconda::samtools=1.13    
 ```
 ```   
 conda install bioconda::picard=2.0    
