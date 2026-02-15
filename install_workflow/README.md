@@ -6,7 +6,7 @@ In the following examples:
   
 Note: Ensure all required data has been fully downloaded before proceeding.
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/31c2ea3c-0439-4192-a3a9-e11da7ff0d77" /><br>
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/de000652-1a19-4cd6-8f4d-92c42d523488" />    <br>
 *Fig. 1 : The overall structure of the directories.*
 
 ## Section1: Installation Procedure
