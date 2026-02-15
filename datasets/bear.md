@@ -1,7 +1,7 @@
 ## Brown bear data download
 1. Create the required directories  
     a. If you are working with brown bear data, create a directory named "bear" in your home directory.    
- 	```   
+    ```   
     mkdir bear
  	```   
     b. In the "bear" directory, create two sub-directories, "data" and "module" (see Fig. 1).    
@@ -19,7 +19,7 @@
     mkdir fastq ref db   
  	```   
 
-2.	Go to the "fastq" directory and download FASTQ file.    
+3.	Go to the "fastq" directory and download FASTQ file.    
     (note) While you can process multiple samples for variant calling, this tutorial uses a single sample to keep the workflow simple.     <br>       
     a. Visit the website: https://www.ebi.ac.uk/ena/browser/view/PRJNA1139383.       <br>
   	
