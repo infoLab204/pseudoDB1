@@ -3,6 +3,12 @@ This tutorial is organized into two sections: tool installation and the genetic 
 In the following examples:
 -	Lines starting with # are comments providing context.
 -	Commands inside code blocks are executable.
+
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/31c2ea3c-0439-4192-a3a9-e11da7ff0d77" />
+Fig. 1 : The overall structure of the directories.
+
+
+
 Note: Ensure all required data has been fully downloaded before proceeding.
 
 ## Section1: Installation Procedure
