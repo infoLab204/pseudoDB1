@@ -113,6 +113,9 @@ Note on db_type Values:
 Note: Certain species may lack established dbSNP resources.
 
 #### Option A: GATK4 Workflow Execution
+```   
+conda activate gatk4         # Activate the environment    
+```
 This option configures a modern environment utilizing the GATK4 HaplotypeCaller engine. The general command structure for the variant calling function is as follows:    <br><br>
 __Command Syntax: python3 pipeline4.py species ref sample db_type thread__      <br><br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
@@ -133,6 +136,9 @@ Using the "human" dataset as an example, the three supported use cases are demon
     Upon completion, all output VCF files will be located in the variants/ directory.
 
 #### Option B: GATK3 Workflow
+```   
+conda activate gatk3         # Activate the environment    
+```
 This option configures a modern environment utilizing the GATK3 UnifiedGenotyper engine. The general command structure for the variant calling function is as follows:    <br><br>
 __Command Syntax: python3 pipeline3.py species ref sample db_type thread__    <br><br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
