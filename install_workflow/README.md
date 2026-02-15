@@ -35,30 +35,67 @@ source ~/.bashrc
 ### 2. Tool Installation Options
 #### Option A: GATK4 Workflow    
 This option sets up a modern environment utilizing the GATK4 HaplotypeCaller engine.    
-$ mkdir gatk4                        # Execute this command in your home directory    
-$ conda create -n gatk4        # Create a dedicated virtual environment    
-$ conda activate gatk4         # Activate the environment    
-$ conda install bioconda::bwa-mem2    
-$ conda install bioconda::samtools    
-$ conda install bioconda::picard    
-$ conda install bioconda::gatk4    
+```   
+mkdir gatk4                        # Execute this command in your home directory    
+```
+```   
+conda create -n gatk4        # Create a dedicated virtual environment    
+```
+```   
+conda activate gatk4         # Activate the environment    
+```
+```   
+conda install bioconda::bwa-mem2    
+```
+```   
+conda install bioconda::samtools    
+```
+```   
+conda install bioconda::picard    
+```
+```   
+conda install bioconda::gatk4    
+```
 
 #### Option B: GATK3 Workflow    
 This option is for legacy pipelines requiring the GATK3 UnifiedGenotyper. Note that GATK3 requires manual registration due to licensing.    
-$ mkdir gatk3                        # Execute this command in your home directory     
-$ conda create -n gatk3        # Create a dedicated virtual environment    
-$ conda activate gatk3         # Activate the environment    
-$ conda install bioconda::bwa-mem2    
-$ conda install bioconda::samtools    
-$ conda install bioconda::picard=2.0    
-$ conda install bioconda::gatk=3.8    
-
-# Manually download and register GATK 3.8    
-$ wget https://storage.googleapis.com/gatk-software/package-archive/gatk/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2     
-$ bunzip2 GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2    
-$ tar xvf GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar    
-$ mv GenomeAnalysisTK-3.8-1-0-gf15c1c3ef gatk3.8    
-$ gatk-register gatk3.8/GenomeAnalysisTK.jar    
+```   
+mkdir gatk3                        # Execute this command in your home directory     
+```
+```   
+conda create -n gatk3        # Create a dedicated virtual environment    
+```
+```   
+conda activate gatk3         # Activate the environment    
+```
+```   
+conda install bioconda::bwa-mem2    
+```
+```   
+conda install bioconda::samtools    
+```
+```   
+conda install bioconda::picard=2.0    
+```
+```   
+conda install bioconda::gatk=3.8    
+```   
+Manually download and register GATK 3.8    
+```  
+wget https://storage.googleapis.com/gatk-software/package-archive/gatk/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2     
+```
+```  
+bunzip2 GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar.bz2    
+```
+```  
+tar -xvf GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.tar    
+```
+```  
+mv GenomeAnalysisTK-3.8-1-0-gf15c1c3ef gatk3.8    
+```
+```  
+gatk-register gatk3.8/GenomeAnalysisTK.jar    
+```
 
 ## Section2: Variant Calling Workflow    
 This section details the execution of the variant calling pipeline. The guide supports two primary engines: GATK v3 (UnifiedGenotyper) and GATK v4 (HaplotypeCaller). Users should select the option that best aligns with their research objectives.
