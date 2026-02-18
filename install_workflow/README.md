@@ -108,8 +108,8 @@ Both workflows require the following input parameters:
 
 Note on db_type Values:    
     1. null: Use this when constructing a new pseudo-database.    
-    2. [dbSNP Name]: Use this when calling variants using an existing dbSNP.    
-    3. [pseudoDB Name]: Use this when calling variants using a previously generated pseudo-database.    <br><br>
+    2. dbSNP Name: Use this when calling variants using an existing dbSNP.    
+    3. pseudoDB Name: Use this when calling variants using a previously generated pseudo-database.    <br><br>
 Note: Certain species may lack established dbSNP resources.
 
 #### Option A: GATK4 Workflow Execution
