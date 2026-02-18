@@ -36,7 +36,7 @@ source ~/.bashrc
 #### Option A: GATK4 Workflow    
 This option sets up a modern environment utilizing the GATK4 HaplotypeCaller engine.    
 ```   
-mkdir gatk4                        # Execute this command in your home directory    
+mkdir gatk4                  # Execute this command in your home directory    
 ```
 ```   
 conda create -n gatk4        # Create a dedicated virtual environment    
@@ -60,7 +60,7 @@ conda install bioconda::gatk4
 #### Option B: GATK3 Workflow    
 This option is for legacy pipelines requiring the GATK3 UnifiedGenotyper. Note that GATK3 requires manual registration due to licensing.    
 ```   
-mkdir gatk3                        # Execute this command in your home directory     
+mkdir gatk3                  # Execute this command in your home directory     
 ```
 ```   
 conda create -n gatk3        # Create a dedicated virtual environment    
