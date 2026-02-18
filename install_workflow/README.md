@@ -115,7 +115,7 @@ Note: Certain species may lack established dbSNP resources.
 #### Option A: GATK4 Workflow Execution
 Download "pipeline4.py" module from the github repository into directory "gatk4".   
 ```   
-curl -L -O https://github.com/infoLab204/pseudoDB/raw/main/pipeline4.py  # download "pipeline4.py" module   
+curl -L -O https://github.com/infoLab204/pseudoDB/blob/main/script/pipeline4.py  # download "pipeline4.py" module   
 ```   
 
 ```   
@@ -143,7 +143,7 @@ Using the "human" dataset as an example, the three supported use cases are demon
 #### Option B: GATK3 Workflow
 Download "pipeline3.py" module from the github repository into directory "gatk3".   
 ```   
-curl -L -O https://github.com/infoLab204/pseudoDB/raw/main/pipeline3.py  # download "pipeline3.py" module   
+curl -L -O https://github.com/infoLab204/pseudoDB1/blob/main/script/pipeline3.py  # download "pipeline3.py" module   
 ```   
 
 ```   
