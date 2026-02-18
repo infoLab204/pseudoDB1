@@ -6,9 +6,9 @@ In the following examples:
   
 Note: Ensure all required data has been fully downloaded before proceeding.
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/de000652-1a19-4cd6-8f4d-92c42d523488" />    <br>
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ccc3e0ea-13bf-4fab-b941-664dd58005d6" />   <br>
 *Fig. 1 : The overall structure of the directories.*
-
+<br><br>
 ## Section1: Installation Procedure
 This section provides a step-by-step guide for installing the necessary bioinformatics tools, including BWA, Samtools, Picard, and GATK. This guide supports two primary workflows: GATK v3 (UnifiedGenotyper) or GATK v4 (HaplotypeCaller). Please choose the option that best fits your research requirements.
 
