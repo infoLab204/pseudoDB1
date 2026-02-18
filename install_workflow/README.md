@@ -122,7 +122,7 @@ curl -L -O https://github.com/infoLab204/pseudoDB/blob/main/script/pipeline4.py 
 conda activate gatk4         # Activate the environment    
 ```
 This option configures a modern environment utilizing the GATK4 HaplotypeCaller engine. The general command structure for the variant calling function is as follows:    <br><br>
-__Command Syntax: python3 pipeline4.py species ref sample db_type thread__      <br><br>
+__Command Syntax: python pipeline4.py species ref sample db_type thread__      <br><br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
 - ##### Case 1: Generating a New Pseudo-Database
     ```  
@@ -150,7 +150,7 @@ curl -L -O https://github.com/infoLab204/pseudoDB1/blob/main/script/pipeline3.py
 conda activate gatk3         # Activate the environment    
 ```
 This option configures a modern environment utilizing the GATK3 UnifiedGenotyper engine. The general command structure for the variant calling function is as follows:    <br><br>
-__Command Syntax: python3 pipeline3.py species ref sample db_type thread__    <br><br>
+__Command Syntax: python pipeline3.py species ref sample db_type thread__    <br><br>
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
 - ##### Case 1: Generating a New Pseudo-Database
     ```  
