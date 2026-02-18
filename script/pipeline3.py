@@ -10,15 +10,21 @@ home_path=home_path+"/gatk3"
 
 # working directory 
 def set_wd(species) :
-    path_dir=f"{home_path}/{species}"
-    file_list=os.listdir(path_dir)
+    path_dir=f"{home_path}/{species}/module"
+    dict_list=os.listdir(path_dir)
 
-    if "module" in file_list :
-        print("The module directory exists")
+    dict_exts=["align","machine","error","model","variants"]
+
+    missing_dict=[]
+
+    for f in dict_exts :
+        full_path=os.path.join(path_dir,f)
+        if not os.path.exists(full_path) :
+            missing_dict.append(f)
+
+    if not missing_dict :
+        print("The directorys are already ready")
     else :    
-        # module directory
-        os.mkdir(f"{home_path}/{species}/module")
-    
         # result of aligning FASTQ to reference resulting BAM
         os.mkdir(f"{home_path}/{species}/module/align")
 
@@ -409,6 +415,7 @@ def qs_model(species, dbtype, sample_name) :
 
 
 def main() :
+    #os.system("curl -L -O https://raw.githubusercontent.com/infoLab204/pseudoDB/refs/heads/main/pipeline/pipeline3.py")
     """
     parser = argparse.ArgumentParser(usage='python %(prog)s [options]', prog='pipeline3.py' )
 
@@ -435,7 +442,7 @@ def main() :
 
     # Create subdirectories under directory "module".
     set_wd(species)
-
+    
     # Create file names for the alignment under directory "ref".
     pre_align(species, ref)
 
@@ -456,7 +463,7 @@ def main() :
 
         # Call genetic variants.
         variant_call(species, ref, dbtype)
-
+    
 # end of main()
 
 if __name__ == "__main__":
