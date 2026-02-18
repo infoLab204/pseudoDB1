@@ -13,7 +13,6 @@ def set_wd(species) :
     path_dir=f"{home_path}/{species}"
     file_list=os.listdir(path_dir)
 
-    print(file_list)
     if "module" in file_list :
         print("The module directory exists")
     else :    
