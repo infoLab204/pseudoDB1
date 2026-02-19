@@ -126,17 +126,17 @@ __Command Syntax: python pipeline4.py species ref sample db_type thread__      <
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
 - ##### Case 1: Generating a New Pseudo-Database
     ```  
-    python3 pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 null 16    
+    python pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 null 16    
     ```
     Upon completion, output VCF file will be located in the db/ directory.    
 
 - ##### Case 2: Variant Calling with an Existing dbSNP
     ```  
-    python3 pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_dbSNP.vcf.gz 16    
+    python pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_dbSNP.vcf.gz 16    
     ```  
 - ##### Case 3: Variant Calling with a Custom Pseudo-Database 
     ```  
-    python3 pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_pseudoDB.vcf.gz 16    
+    python pipeline4.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_pseudoDB.vcf.gz 16    
     ```
     Upon completion, all output VCF files will be located in the variants/ directory.
 
@@ -154,16 +154,16 @@ __Command Syntax: python pipeline3.py species ref sample db_type thread__    <br
 Using the "human" dataset as an example, the three supported use cases are demonstrated below:    
 - ##### Case 1: Generating a New Pseudo-Database
     ```  
-    python3 pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 null 16
+    python pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 null 16
     ```
     Upon completion, output VCF file will be located in the db/ directory.   
 - ##### Case 2: Variant Calling with an Existing dbSNP
     ```  
-    python3 pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_dbSNP.vcf.gz 16    
+    python pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_dbSNP.vcf.gz 16    
     ```  
 - ##### Case 3: Variant Calling with a Custom Pseudo-Database 
     ```  
-    python3 pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_pseudoDB.vcf.gz 16    
+    python pipeline3.py human GRCh38_full_analysis_set_plus_decoy_hla.fa HG00096 human_pseudoDB.vcf.gz 16    
     ```  
     Upon completion, all output VCF files will be located in the variants/ directory.
 
