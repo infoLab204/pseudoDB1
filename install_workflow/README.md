@@ -96,7 +96,7 @@ mv GenomeAnalysisTK-3.8-1-0-gf15c1c3ef gatk3.8
 ```  
 gatk-register gatk3.8/GenomeAnalysisTK.jar    
 ```
-
+<br><br>
 ## Section2: Variant Calling Workflow    
 This section details the execution of the variant calling pipeline. The guide supports two primary engines: GATK v3 (UnifiedGenotyper) and GATK v4 (HaplotypeCaller). Users should select the option that best aligns with their research objectives.
 Both workflows require the following input parameters:    
