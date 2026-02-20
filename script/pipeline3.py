@@ -5,7 +5,7 @@ import argparse
 
 # home directory setting
 home_path=os.path.expanduser("~")
-home_path=home_path+"/gatk3"
+
 
 
 # working directory 
@@ -184,7 +184,7 @@ def variant_call(species, reference_file, dbtype):
     cmd_line=""
     for i in range(len(sample)) :
         cmd_line=cmd_line + f"-I {home_path}/{species}/module/machine/{sample[i]}_{dbtype}_recalibrated.bam "
-    cmd_line=cmd_line + f"-o {home_path}/{species}/module/variants/{species}_{dbtype}_UC_variant_calling.vcf.gz \
+    cmd_line=cmd_line + f"-o {home_path}/{species}/module/variants/{species}_{dbtype}_variant_calling.vcf.gz \
             --genotype_likelihoods_model BOTH &> {home_path}/{species}/module/variants/{species}_{dbtype}_variant_calling.vcf.gz.log"
     print(cmd_line)
     os.system(f"gatk  -T UnifiedGenotyper -R {home_path}/{species}/data/ref/{reference_file} {cmd_line}" );
