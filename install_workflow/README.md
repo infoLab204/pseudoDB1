@@ -6,7 +6,7 @@ In the following examples:
   
 Note: Ensure all required data has been fully downloaded before proceeding.
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ccc3e0ea-13bf-4fab-b941-664dd58005d6" />   <br>
+<img width="800" height="350" alt="image" src="https://github.com/user-attachments/assets/60a4d87d-91bb-45a7-a710-52724e63e62b" />  <br>
 *Fig. 1 : The overall structure of the directories.*
 <br><br>
 ## Section1: Installation Procedure
@@ -36,9 +36,6 @@ source ~/.bashrc
 #### Option A: GATK4 Workflow    
 This option sets up a modern environment utilizing the GATK4 HaplotypeCaller engine.    
 ```   
-mkdir gatk4                  # Execute this command in your home directory    
-```
-```   
 conda create -n gatk4        # Create a dedicated virtual environment    
 ```
 ```   
@@ -59,9 +56,6 @@ conda install bioconda::gatk4
 
 #### Option B: GATK3 Workflow    
 This option is for legacy pipelines requiring the GATK3 UnifiedGenotyper. Note that GATK3 requires manual registration due to licensing.    
-```   
-mkdir gatk3                  # Execute this command in your home directory     
-```
 ```   
 conda create -n gatk3        # Create a dedicated virtual environment    
 ```
@@ -113,7 +107,7 @@ Note on db_type Values:
 Note: Certain species may lack established dbSNP resources.
 
 #### Option A: GATK4 Workflow Execution
-Download "pipeline4.py" module from the github repository into directory "gatk4".   
+Download "pipeline4.py" module from the github repository into directory "_speices_".   
 ```   
 curl -L -O https://raw.githubusercontent.com/infoLab204/pseudoDB/refs/heads/main/script/pipeline4.py  # download "pipeline4.py" module   
 ```   
@@ -141,7 +135,7 @@ Using the "human" dataset as an example, the three supported use cases are demon
     Upon completion, all output VCF files will be located in the variants/ directory.
 
 #### Option B: GATK3 Workflow
-Download "pipeline3.py" module from the github repository into directory "gatk3".   
+Download "pipeline3.py" module from the github repository into directory "_species_".   
 ```   
 curl -L -O https://raw.githubusercontent.com/infoLab204/pseudoDB/refs/heads/main/script/pipeline3.py  # download "pipeline3.py" module   
 ```   
