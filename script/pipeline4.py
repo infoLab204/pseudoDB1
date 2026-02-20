@@ -4,7 +4,7 @@ import subprocess
 
 # home directory setting
 home_path=os.path.expanduser("~")
-home_path=home_path+"/gatk4"
+
 
 
 # working directory 
